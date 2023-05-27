@@ -6,7 +6,7 @@ export default function MatchLayout({
   children: React.ReactNode;
 }) {
   return (
-    <section className="flex justify-center items-center min-h-screen">
+    <section className="flex justify-center items-center m-auto pt-10">
       {/* Include shared UI here e.g. a header or sidebar */}
       {children}
     </section>

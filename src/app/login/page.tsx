@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { redirect } from "next/navigation";
 import React from "react";
 import { Button } from "~/components/ui/button";
@@ -76,15 +77,21 @@ export default function LoginPage() {
           />
         </Button>
       )}
-      <Button onClick={handleConnect} className="bg-black" variant="secondary">
-        <Image
-          src={logo_steam}
-          alt="MetaMaskLogo"
-          quality={100}
-          width={40}
-          height={40}
-        />
-      </Button>
+      <Link href="https://steamcommunity.com/oauth/login?response_type=token&client_id=22421D298299C0F7F2E2F667B4208A61&state=whatever_you_want">
+        <Button
+          onClick={handleConnect}
+          className="bg-black"
+          variant="secondary"
+        >
+          <Image
+            src={logo_steam}
+            alt="MetaMaskLogo"
+            quality={100}
+            width={40}
+            height={40}
+          />
+        </Button>
+      </Link>
     </div>
   );
 }
