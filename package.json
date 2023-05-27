@@ -9,17 +9,40 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@metamask/detect-provider": "^2.0.0",
+    "@moralisweb3/next": "^2.21.0",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@types/cookie-session": "^2.0.44",
     "@types/node": "20.2.4",
-    "@types/react": "18.2.7",
-    "@types/react-dom": "18.2.4",
+    "@types/passport": "^1.0.12",
+    "@types/passport-steam": "^1.0.1",
+    "@types/react": "17.0.2",
+    "@types/react-dom": "17.0.2",
     "autoprefixer": "10.4.14",
+    "class-variance-authority": "^0.6.0",
+    "clsx": "^1.2.1",
+    "cookie-session": "^2.0.0",
+    "cors": "^2.8.5",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.4",
+    "ethers": "^6.4.0",
+    "lucide-react": "^0.221.0",
+    "moralis": "^2.21.0",
     "next": "13.4.4",
+    "next-auth": "^4.22.1",
+    "next-connect": "^1.0.0",
+    "passport": "^0.6.0",
+    "passport-steam": "^1.0.17",
     "postcss": "8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "tailwind-merge": "^1.12.0",
     "tailwindcss": "3.3.2",
-    "typescript": "5.0.4"
+    "tailwindcss-animate": "^1.0.5",
+    "typescript": "5.0.4",
+    "wagmi": "^1.0.8"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.8.0"
   }
 }
