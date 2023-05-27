@@ -14,6 +14,7 @@ export default function LoginPage() {
   const [hasProvider, setHasProvider] = useState<boolean | null>(null);
   const initialState = { accounts: [] };
   const [wallet, setWallet] = useState(initialState);
+  let isMetaMask = false;
 
   useEffect(() => {
     const refreshAccounts = (accounts: any) => {
@@ -41,6 +42,7 @@ export default function LoginPage() {
     return () => {
       window.ethereum?.removeListener("accountsChanged", refreshAccounts);
     };
+    isMetaMask = window.ethereum?.isMetaMask;
   }, []);
 
   const updateWallet = async (accounts: any) => {
@@ -62,7 +64,7 @@ export default function LoginPage() {
   return (
     <div className=" flex gap-2">
       <h2>{hasProvider ? "" : "Enable Metamask Extension!"}</h2>
-      {window.ethereum?.isMetaMask && wallet.accounts.length < 1 && (
+      {isMetaMask && wallet.accounts.length < 1 && (
         <Button
           onClick={handleConnect}
           className="bg-black"
