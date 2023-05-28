@@ -79,7 +79,7 @@ export default function LoginPage() {
           />
         </Button>
       )}
-      <Link href="https://steamcommunity.com/oauth/login?response_type=token&client_id=D0998D9306F7A101261E16EC6D4D27CF&state=whatever_you_want">
+      <Link href="https://steamcommunity.com/oauth/login?response_type=token&client_id=59DD5BF40D2B3CE32D4B824DDE198644">
         <Button
           onClick={handleConnect}
           className="bg-black"
